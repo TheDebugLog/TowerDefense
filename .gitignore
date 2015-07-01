@@ -17,6 +17,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Unity directories
+Library
+
+#VS files
+*.sln
+
 # =========================
 # Operating System Files
 # =========================
