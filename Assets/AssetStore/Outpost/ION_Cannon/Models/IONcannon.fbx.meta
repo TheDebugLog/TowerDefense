@@ -1,0 +1,1065 @@
+fileFormatVersion: 2
+guid: faa3716e10170472a8b2fa9fb6b646c7
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: Barrel 1
+    100004: Barrel 2
+    100006: Barrel 3
+    100008: Barrel 4
+    100010: Body_1
+    100012: Body_2
+    100014: Body_3
+    100016: Body_4
+    100018: Body_5
+    100020: Cell_L_1
+    100022: Cell_L_1 1
+    100024: Cell_L_1 2
+    100026: Cell_L_1 3
+    100028: Cell_L_1 4
+    100030: Cell_L_2
+    100032: Cell_L_2 1
+    100034: Cell_L_2 2
+    100036: Cell_L_2 3
+    100038: Cell_L_3
+    100040: Cell_L_3 1
+    100042: Cell_L_3 2
+    100044: Cell_L_4
+    100046: Cell_L_4 1
+    100048: Cell_L_5
+    100050: Cell_M_1
+    100052: Cell_M_1 1
+    100054: Cell_M_1 2
+    100056: Cell_M_1 3
+    100058: Cell_M_1 4
+    100060: Cell_M_2
+    100062: Cell_M_2 1
+    100064: Cell_M_2 2
+    100066: Cell_M_2 3
+    100068: Cell_M_3
+    100070: Cell_M_3 1
+    100072: Cell_M_3 2
+    100074: Cell_M_4
+    100076: Cell_M_4 1
+    100078: Cell_M_6
+    100080: Cell_R_1
+    100082: Cell_R_1 1
+    100084: Cell_R_1 2
+    100086: Cell_R_1 3
+    100088: Cell_R_1 4
+    100090: Cell_R_2
+    100092: Cell_R_2 1
+    100094: Cell_R_2 2
+    100096: Cell_R_2 3
+    100098: Cell_R_3
+    100100: Cell_R_3 1
+    100102: Cell_R_3 2
+    100104: Cell_R_4
+    100106: Cell_R_4 1
+    100108: Cell_R_5
+    100110: CELLS
+    100112: CELLS 1
+    100114: CELLS 2
+    100116: CELLS 3
+    100118: CELLS 4
+    100120: Gyroscope
+    100122: //RootNode
+    100124: pCube23
+    100126: pCube28
+    100128: polySurface98
+    100130: polySurface99
+    100132: Rotor_Body
+    100134: s_1
+    100136: s_1 1
+    100138: s_1 2
+    100140: s_1 3
+    100142: s_1 4
+    100144: s_2
+    100146: s_2 1
+    100148: s_2 2
+    100150: s_2 3
+    100152: s_2 4
+    100154: s_3
+    100156: s_3 1
+    100158: s_3 2
+    100160: s_3 3
+    100162: s_3 4
+    100164: s_4
+    100166: s_4 1
+    100168: s_4 2
+    100170: s_4 3
+    100172: s_4 4
+    100174: Tail
+    100176: Tail 1
+    100178: Tail 2
+    100180: Tail 3
+    100182: Tail1
+    100184: arm_1
+    100186: arm_2
+    100188: hydraulic_1
+    100190: hydraulic_2
+    100192: pipe_1
+    100194: pipe_2
+    100196: Barrel_A
+    100198: Barrel_B
+    100200: Barrel_C
+    100202: Barrel_D
+    100204: Barrel_E
+    100206: Cell_L_A_1
+    100208: Cell_L_B_1
+    100210: Cell_L_B_2
+    100212: Cell_L_C_1
+    100214: Cell_L_C_2
+    100216: Cell_L_C_3
+    100218: Cell_L_D_1
+    100220: Cell_L_D_2
+    100222: Cell_L_D_3
+    100224: Cell_L_D_4
+    100226: Cell_L_E_1
+    100228: Cell_L_E_2
+    100230: Cell_L_E_3
+    100232: Cell_L_E_4
+    100234: Cell_L_E_5
+    100236: Cell_M_A_1
+    100238: Cell_M_B_1
+    100240: Cell_M_B_2
+    100242: Cell_M_C_1
+    100244: Cell_M_C_2
+    100246: Cell_M_C_3
+    100248: Cell_M_D_1
+    100250: Cell_M_D_2
+    100252: Cell_M_D_3
+    100254: Cell_M_D_4
+    100256: Cell_M_E_1
+    100258: Cell_M_E_2
+    100260: Cell_M_E_3
+    100262: Cell_M_E_4
+    100264: Cell_M_E_6
+    100266: Cell_R_A_1
+    100268: Cell_R_B_1
+    100270: Cell_R_B_2
+    100272: Cell_R_C_1
+    100274: Cell_R_C_2
+    100276: Cell_R_C_3
+    100278: Cell_R_D_1
+    100280: Cell_R_D_2
+    100282: Cell_R_D_3
+    100284: Cell_R_D_4
+    100286: Cell_R_E_1
+    100288: Cell_R_E_2
+    100290: Cell_R_E_3
+    100292: Cell_R_E_4
+    100294: Cell_R_E_5
+    100296: CELLS_A
+    100298: CELLS_B
+    100300: CELLS_C
+    100302: CELLS_D
+    100304: CELLS_E
+    100306: s_A_1
+    100308: s_A_2
+    100310: s_A_3
+    100312: s_A_4
+    100314: s_B_1
+    100316: s_B_2
+    100318: s_B_3
+    100320: s_B_4
+    100322: s_C_1
+    100324: s_C_2
+    100326: s_C_3
+    100328: s_C_4
+    100330: s_D_1
+    100332: s_D_2
+    100334: s_D_3
+    100336: s_D_4
+    100338: s_E_1
+    100340: s_E_2
+    100342: s_E_3
+    100344: s_E_4
+    100346: Tail_4_D
+    100348: Tail_A
+    100350: Tail_B
+    100352: Tail_C
+    100354: Tail_E
+    400000: Barrel
+    400002: Barrel 1
+    400004: Barrel 2
+    400006: Barrel 3
+    400008: Barrel 4
+    400010: Body_1
+    400012: Body_2
+    400014: Body_3
+    400016: Body_4
+    400018: Body_5
+    400020: Cell_L_1
+    400022: Cell_L_1 1
+    400024: Cell_L_1 2
+    400026: Cell_L_1 3
+    400028: Cell_L_1 4
+    400030: Cell_L_2
+    400032: Cell_L_2 1
+    400034: Cell_L_2 2
+    400036: Cell_L_2 3
+    400038: Cell_L_3
+    400040: Cell_L_3 1
+    400042: Cell_L_3 2
+    400044: Cell_L_4
+    400046: Cell_L_4 1
+    400048: Cell_L_5
+    400050: Cell_M_1
+    400052: Cell_M_1 1
+    400054: Cell_M_1 2
+    400056: Cell_M_1 3
+    400058: Cell_M_1 4
+    400060: Cell_M_2
+    400062: Cell_M_2 1
+    400064: Cell_M_2 2
+    400066: Cell_M_2 3
+    400068: Cell_M_3
+    400070: Cell_M_3 1
+    400072: Cell_M_3 2
+    400074: Cell_M_4
+    400076: Cell_M_4 1
+    400078: Cell_M_6
+    400080: Cell_R_1
+    400082: Cell_R_1 1
+    400084: Cell_R_1 2
+    400086: Cell_R_1 3
+    400088: Cell_R_1 4
+    400090: Cell_R_2
+    400092: Cell_R_2 1
+    400094: Cell_R_2 2
+    400096: Cell_R_2 3
+    400098: Cell_R_3
+    400100: Cell_R_3 1
+    400102: Cell_R_3 2
+    400104: Cell_R_4
+    400106: Cell_R_4 1
+    400108: Cell_R_5
+    400110: CELLS
+    400112: CELLS 1
+    400114: CELLS 2
+    400116: CELLS 3
+    400118: CELLS 4
+    400120: Gyroscope
+    400122: //RootNode
+    400124: pCube23
+    400126: pCube28
+    400128: polySurface98
+    400130: polySurface99
+    400132: Rotor_Body
+    400134: s_1
+    400136: s_1 1
+    400138: s_1 2
+    400140: s_1 3
+    400142: s_1 4
+    400144: s_2
+    400146: s_2 1
+    400148: s_2 2
+    400150: s_2 3
+    400152: s_2 4
+    400154: s_3
+    400156: s_3 1
+    400158: s_3 2
+    400160: s_3 3
+    400162: s_3 4
+    400164: s_4
+    400166: s_4 1
+    400168: s_4 2
+    400170: s_4 3
+    400172: s_4 4
+    400174: Tail
+    400176: Tail 1
+    400178: Tail 2
+    400180: Tail 3
+    400182: Tail1
+    400184: arm_1
+    400186: arm_2
+    400188: hydraulic_1
+    400190: hydraulic_2
+    400192: pipe_1
+    400194: pipe_2
+    400196: Barrel_A
+    400198: Barrel_B
+    400200: Barrel_C
+    400202: Barrel_D
+    400204: Barrel_E
+    400206: Cell_L_A_1
+    400208: Cell_L_B_1
+    400210: Cell_L_B_2
+    400212: Cell_L_C_1
+    400214: Cell_L_C_2
+    400216: Cell_L_C_3
+    400218: Cell_L_D_1
+    400220: Cell_L_D_2
+    400222: Cell_L_D_3
+    400224: Cell_L_D_4
+    400226: Cell_L_E_1
+    400228: Cell_L_E_2
+    400230: Cell_L_E_3
+    400232: Cell_L_E_4
+    400234: Cell_L_E_5
+    400236: Cell_M_A_1
+    400238: Cell_M_B_1
+    400240: Cell_M_B_2
+    400242: Cell_M_C_1
+    400244: Cell_M_C_2
+    400246: Cell_M_C_3
+    400248: Cell_M_D_1
+    400250: Cell_M_D_2
+    400252: Cell_M_D_3
+    400254: Cell_M_D_4
+    400256: Cell_M_E_1
+    400258: Cell_M_E_2
+    400260: Cell_M_E_3
+    400262: Cell_M_E_4
+    400264: Cell_M_E_6
+    400266: Cell_R_A_1
+    400268: Cell_R_B_1
+    400270: Cell_R_B_2
+    400272: Cell_R_C_1
+    400274: Cell_R_C_2
+    400276: Cell_R_C_3
+    400278: Cell_R_D_1
+    400280: Cell_R_D_2
+    400282: Cell_R_D_3
+    400284: Cell_R_D_4
+    400286: Cell_R_E_1
+    400288: Cell_R_E_2
+    400290: Cell_R_E_3
+    400292: Cell_R_E_4
+    400294: Cell_R_E_5
+    400296: CELLS_A
+    400298: CELLS_B
+    400300: CELLS_C
+    400302: CELLS_D
+    400304: CELLS_E
+    400306: s_A_1
+    400308: s_A_2
+    400310: s_A_3
+    400312: s_A_4
+    400314: s_B_1
+    400316: s_B_2
+    400318: s_B_3
+    400320: s_B_4
+    400322: s_C_1
+    400324: s_C_2
+    400326: s_C_3
+    400328: s_C_4
+    400330: s_D_1
+    400332: s_D_2
+    400334: s_D_3
+    400336: s_D_4
+    400338: s_E_1
+    400340: s_E_2
+    400342: s_E_3
+    400344: s_E_4
+    400346: Tail_4_D
+    400348: Tail_A
+    400350: Tail_B
+    400352: Tail_C
+    400354: Tail_E
+    2300000: Barrel
+    2300002: Barrel 1
+    2300004: Barrel 2
+    2300006: Barrel 3
+    2300008: Barrel 4
+    2300010: Body_1
+    2300012: Body_2
+    2300014: Body_3
+    2300016: Body_4
+    2300018: Body_5
+    2300020: Cell_L_1
+    2300022: Cell_L_1 1
+    2300024: Cell_L_1 2
+    2300026: Cell_L_1 3
+    2300028: Cell_L_1 4
+    2300030: Cell_L_2
+    2300032: Cell_L_2 1
+    2300034: Cell_L_2 2
+    2300036: Cell_L_2 3
+    2300038: Cell_L_3
+    2300040: Cell_L_3 1
+    2300042: Cell_L_3 2
+    2300044: Cell_L_4
+    2300046: Cell_L_4 1
+    2300048: Cell_L_5
+    2300050: Cell_M_1
+    2300052: Cell_M_1 1
+    2300054: Cell_M_1 2
+    2300056: Cell_M_1 3
+    2300058: Cell_M_1 4
+    2300060: Cell_M_2
+    2300062: Cell_M_2 1
+    2300064: Cell_M_2 2
+    2300066: Cell_M_2 3
+    2300068: Cell_M_3
+    2300070: Cell_M_3 1
+    2300072: Cell_M_3 2
+    2300074: Cell_M_4
+    2300076: Cell_M_4 1
+    2300078: Cell_M_6
+    2300080: Cell_R_1
+    2300082: Cell_R_1 1
+    2300084: Cell_R_1 2
+    2300086: Cell_R_1 3
+    2300088: Cell_R_1 4
+    2300090: Cell_R_2
+    2300092: Cell_R_2 1
+    2300094: Cell_R_2 2
+    2300096: Cell_R_2 3
+    2300098: Cell_R_3
+    2300100: Cell_R_3 1
+    2300102: Cell_R_3 2
+    2300104: Cell_R_4
+    2300106: Cell_R_4 1
+    2300108: Cell_R_5
+    2300110: Gyroscope
+    2300112: //RootNode
+    2300114: pCube23
+    2300116: pCube28
+    2300118: polySurface98
+    2300120: polySurface99
+    2300122: Rotor_Body
+    2300124: s_1
+    2300126: s_1 1
+    2300128: s_1 2
+    2300130: s_1 3
+    2300132: s_1 4
+    2300134: s_2
+    2300136: s_2 1
+    2300138: s_2 2
+    2300140: s_2 3
+    2300142: s_2 4
+    2300144: s_3
+    2300146: s_3 1
+    2300148: s_3 2
+    2300150: s_3 3
+    2300152: s_3 4
+    2300154: s_4
+    2300156: s_4 1
+    2300158: s_4 2
+    2300160: s_4 3
+    2300162: s_4 4
+    2300164: Tail
+    2300166: Tail 1
+    2300168: Tail 2
+    2300170: Tail 3
+    2300172: Tail1
+    2300174: arm_1
+    2300176: arm_2
+    2300178: hydraulic_1
+    2300180: hydraulic_2
+    2300182: pipe_1
+    2300184: pipe_2
+    2300186: Barrel_A
+    2300188: Barrel_B
+    2300190: Barrel_C
+    2300192: Barrel_D
+    2300194: Barrel_E
+    2300196: Cell_L_A_1
+    2300198: Cell_L_B_1
+    2300200: Cell_L_B_2
+    2300202: Cell_L_C_1
+    2300204: Cell_L_C_2
+    2300206: Cell_L_C_3
+    2300208: Cell_L_D_1
+    2300210: Cell_L_D_2
+    2300212: Cell_L_D_3
+    2300214: Cell_L_D_4
+    2300216: Cell_L_E_1
+    2300218: Cell_L_E_2
+    2300220: Cell_L_E_3
+    2300222: Cell_L_E_4
+    2300224: Cell_L_E_5
+    2300226: Cell_M_A_1
+    2300228: Cell_M_B_1
+    2300230: Cell_M_B_2
+    2300232: Cell_M_C_1
+    2300234: Cell_M_C_2
+    2300236: Cell_M_C_3
+    2300238: Cell_M_D_1
+    2300240: Cell_M_D_2
+    2300242: Cell_M_D_3
+    2300244: Cell_M_D_4
+    2300246: Cell_M_E_1
+    2300248: Cell_M_E_2
+    2300250: Cell_M_E_3
+    2300252: Cell_M_E_4
+    2300254: Cell_M_E_6
+    2300256: Cell_R_A_1
+    2300258: Cell_R_B_1
+    2300260: Cell_R_B_2
+    2300262: Cell_R_C_1
+    2300264: Cell_R_C_2
+    2300266: Cell_R_C_3
+    2300268: Cell_R_D_1
+    2300270: Cell_R_D_2
+    2300272: Cell_R_D_3
+    2300274: Cell_R_D_4
+    2300276: Cell_R_E_1
+    2300278: Cell_R_E_2
+    2300280: Cell_R_E_3
+    2300282: Cell_R_E_4
+    2300284: Cell_R_E_5
+    2300286: s_A_1
+    2300288: s_A_2
+    2300290: s_A_3
+    2300292: s_A_4
+    2300294: s_B_1
+    2300296: s_B_2
+    2300298: s_B_3
+    2300300: s_B_4
+    2300302: s_C_1
+    2300304: s_C_2
+    2300306: s_C_3
+    2300308: s_C_4
+    2300310: s_D_1
+    2300312: s_D_2
+    2300314: s_D_3
+    2300316: s_D_4
+    2300318: s_E_1
+    2300320: s_E_2
+    2300322: s_E_3
+    2300324: s_E_4
+    2300326: Tail_4_D
+    2300328: Tail_A
+    2300330: Tail_B
+    2300332: Tail_C
+    2300334: Tail_E
+    3300000: Barrel
+    3300002: Barrel 1
+    3300004: Barrel 2
+    3300006: Barrel 3
+    3300008: Barrel 4
+    3300010: Body_1
+    3300012: Body_2
+    3300014: Body_3
+    3300016: Body_4
+    3300018: Body_5
+    3300020: Cell_L_1
+    3300022: Cell_L_1 1
+    3300024: Cell_L_1 2
+    3300026: Cell_L_1 3
+    3300028: Cell_L_1 4
+    3300030: Cell_L_2
+    3300032: Cell_L_2 1
+    3300034: Cell_L_2 2
+    3300036: Cell_L_2 3
+    3300038: Cell_L_3
+    3300040: Cell_L_3 1
+    3300042: Cell_L_3 2
+    3300044: Cell_L_4
+    3300046: Cell_L_4 1
+    3300048: Cell_L_5
+    3300050: Cell_M_1
+    3300052: Cell_M_1 1
+    3300054: Cell_M_1 2
+    3300056: Cell_M_1 3
+    3300058: Cell_M_1 4
+    3300060: Cell_M_2
+    3300062: Cell_M_2 1
+    3300064: Cell_M_2 2
+    3300066: Cell_M_2 3
+    3300068: Cell_M_3
+    3300070: Cell_M_3 1
+    3300072: Cell_M_3 2
+    3300074: Cell_M_4
+    3300076: Cell_M_4 1
+    3300078: Cell_M_6
+    3300080: Cell_R_1
+    3300082: Cell_R_1 1
+    3300084: Cell_R_1 2
+    3300086: Cell_R_1 3
+    3300088: Cell_R_1 4
+    3300090: Cell_R_2
+    3300092: Cell_R_2 1
+    3300094: Cell_R_2 2
+    3300096: Cell_R_2 3
+    3300098: Cell_R_3
+    3300100: Cell_R_3 1
+    3300102: Cell_R_3 2
+    3300104: Cell_R_4
+    3300106: Cell_R_4 1
+    3300108: Cell_R_5
+    3300110: Gyroscope
+    3300112: //RootNode
+    3300114: pCube23
+    3300116: pCube28
+    3300118: polySurface98
+    3300120: polySurface99
+    3300122: Rotor_Body
+    3300124: s_1
+    3300126: s_1 1
+    3300128: s_1 2
+    3300130: s_1 3
+    3300132: s_1 4
+    3300134: s_2
+    3300136: s_2 1
+    3300138: s_2 2
+    3300140: s_2 3
+    3300142: s_2 4
+    3300144: s_3
+    3300146: s_3 1
+    3300148: s_3 2
+    3300150: s_3 3
+    3300152: s_3 4
+    3300154: s_4
+    3300156: s_4 1
+    3300158: s_4 2
+    3300160: s_4 3
+    3300162: s_4 4
+    3300164: Tail
+    3300166: Tail 1
+    3300168: Tail 2
+    3300170: Tail 3
+    3300172: Tail1
+    3300174: arm_1
+    3300176: arm_2
+    3300178: hydraulic_1
+    3300180: hydraulic_2
+    3300182: pipe_1
+    3300184: pipe_2
+    3300186: Barrel_A
+    3300188: Barrel_B
+    3300190: Barrel_C
+    3300192: Barrel_D
+    3300194: Barrel_E
+    3300196: Cell_L_A_1
+    3300198: Cell_L_B_1
+    3300200: Cell_L_B_2
+    3300202: Cell_L_C_1
+    3300204: Cell_L_C_2
+    3300206: Cell_L_C_3
+    3300208: Cell_L_D_1
+    3300210: Cell_L_D_2
+    3300212: Cell_L_D_3
+    3300214: Cell_L_D_4
+    3300216: Cell_L_E_1
+    3300218: Cell_L_E_2
+    3300220: Cell_L_E_3
+    3300222: Cell_L_E_4
+    3300224: Cell_L_E_5
+    3300226: Cell_M_A_1
+    3300228: Cell_M_B_1
+    3300230: Cell_M_B_2
+    3300232: Cell_M_C_1
+    3300234: Cell_M_C_2
+    3300236: Cell_M_C_3
+    3300238: Cell_M_D_1
+    3300240: Cell_M_D_2
+    3300242: Cell_M_D_3
+    3300244: Cell_M_D_4
+    3300246: Cell_M_E_1
+    3300248: Cell_M_E_2
+    3300250: Cell_M_E_3
+    3300252: Cell_M_E_4
+    3300254: Cell_M_E_6
+    3300256: Cell_R_A_1
+    3300258: Cell_R_B_1
+    3300260: Cell_R_B_2
+    3300262: Cell_R_C_1
+    3300264: Cell_R_C_2
+    3300266: Cell_R_C_3
+    3300268: Cell_R_D_1
+    3300270: Cell_R_D_2
+    3300272: Cell_R_D_3
+    3300274: Cell_R_D_4
+    3300276: Cell_R_E_1
+    3300278: Cell_R_E_2
+    3300280: Cell_R_E_3
+    3300282: Cell_R_E_4
+    3300284: Cell_R_E_5
+    3300286: s_A_1
+    3300288: s_A_2
+    3300290: s_A_3
+    3300292: s_A_4
+    3300294: s_B_1
+    3300296: s_B_2
+    3300298: s_B_3
+    3300300: s_B_4
+    3300302: s_C_1
+    3300304: s_C_2
+    3300306: s_C_3
+    3300308: s_C_4
+    3300310: s_D_1
+    3300312: s_D_2
+    3300314: s_D_3
+    3300316: s_D_4
+    3300318: s_E_1
+    3300320: s_E_2
+    3300322: s_E_3
+    3300324: s_E_4
+    3300326: Tail_4_D
+    3300328: Tail_A
+    3300330: Tail_B
+    3300332: Tail_C
+    3300334: Tail_E
+    4300000: BASE
+    4300002: Gyroscope
+    4300004: pCube28
+    4300006: pCube23
+    4300008: polySurface98
+    4300010: polySurface99
+    4300012: Rotor_Body
+    4300014: Body_1
+    4300016: Barrel
+    4300018: s_1
+    4300020: s_2
+    4300022: s_3
+    4300024: s_4
+    4300026: Tail1
+    4300028: Cell_M_1
+    4300030: Cell_L_1
+    4300032: Cell_R_1
+    4300034: Body_2
+    4300036: Cell_M_2
+    4300038: Cell_L_2
+    4300040: Cell_M_1
+    4300042: Cell_L_1
+    4300044: Cell_R_1
+    4300046: Cell_R_2
+    4300048: Barrel
+    4300050: s_1
+    4300052: s_2
+    4300054: s_3
+    4300056: s_4
+    4300058: Tail
+    4300060: Body_3
+    4300062: Cell_M_2
+    4300064: Cell_L_2
+    4300066: Cell_M_1
+    4300068: Cell_L_1
+    4300070: Cell_M_3
+    4300072: Cell_L_3
+    4300074: Cell_R_1
+    4300076: Cell_R_2
+    4300078: Cell_R_3
+    4300080: Barrel
+    4300082: s_1
+    4300084: s_2
+    4300086: s_3
+    4300088: s_4
+    4300090: Tail
+    4300092: Body_4
+    4300094: Barrel
+    4300096: s_1
+    4300098: s_2
+    4300100: s_3
+    4300102: s_4
+    4300104: Tail
+    4300106: Cell_M_4
+    4300108: Cell_L_4
+    4300110: Cell_M_2
+    4300112: Cell_L_2
+    4300114: Cell_M_1
+    4300116: Cell_L_1
+    4300118: Cell_M_3
+    4300120: Cell_L_3
+    4300122: Cell_R_1
+    4300124: Cell_R_2
+    4300126: Cell_R_3
+    4300128: Cell_R_4
+    4300130: Body_5
+    4300132: Barrel
+    4300134: s_1
+    4300136: s_2
+    4300138: s_3
+    4300140: s_4
+    4300142: Tail
+    4300144: Cell_M_4
+    4300146: Cell_L_4
+    4300148: Cell_M_2
+    4300150: Cell_L_2
+    4300152: Cell_M_1
+    4300154: Cell_L_1
+    4300156: Cell_M_3
+    4300158: Cell_L_3
+    4300160: Cell_M_6
+    4300162: Cell_L_5
+    4300164: Cell_R_1
+    4300166: Cell_R_2
+    4300168: Cell_R_3
+    4300170: Cell_R_4
+    4300172: Cell_R_5
+    4300174: hydraulic_2
+    4300176: pipe_2
+    4300178: hydraulic_1
+    4300180: pipe_1
+    4300182: arm_1
+    4300184: arm_2
+    4300186: Barrel_A
+    4300188: s_A_1
+    4300190: s_A_2
+    4300192: s_A_3
+    4300194: s_A_4
+    4300196: Tail_A
+    4300198: Cell_M_A_1
+    4300200: Cell_L_A_1
+    4300202: Cell_R_A_1
+    4300204: Cell_M_B_2
+    4300206: Cell_L_B_2
+    4300208: Cell_M_B_1
+    4300210: Cell_L_B_1
+    4300212: Cell_R_B_1
+    4300214: Cell_R_B_2
+    4300216: Barrel_B
+    4300218: s_B_1
+    4300220: s_B_2
+    4300222: s_B_3
+    4300224: s_B_4
+    4300226: Tail_B
+    4300228: Cell_M_C_2
+    4300230: Cell_L_C_2
+    4300232: Cell_M_C_1
+    4300234: Cell_L_C_1
+    4300236: Cell_M_C_3
+    4300238: Cell_L_C_3
+    4300240: Cell_R_C_1
+    4300242: Cell_R_C_2
+    4300244: Cell_R_C_3
+    4300246: Barrel_C
+    4300248: s_C_1
+    4300250: s_C_2
+    4300252: s_C_3
+    4300254: s_C_4
+    4300256: Tail_C
+    4300258: Barrel_D
+    4300260: s_D_1
+    4300262: s_D_2
+    4300264: s_D_3
+    4300266: s_D_4
+    4300268: Tail_4_D
+    4300270: Cell_M_D_4
+    4300272: Cell_L_D_4
+    4300274: Cell_M_D_2
+    4300276: Cell_L_D_2
+    4300278: Cell_M_D_1
+    4300280: Cell_L_D_1
+    4300282: Cell_M_D_3
+    4300284: Cell_L_D_3
+    4300286: Cell_R_D_1
+    4300288: Cell_R_D_2
+    4300290: Cell_R_D_3
+    4300292: Cell_R_D_4
+    4300294: Barrel_E
+    4300296: s_E_1
+    4300298: s_E_2
+    4300300: s_E_3
+    4300302: s_E_4
+    4300304: Tail_E
+    4300306: Cell_M_E_4
+    4300308: Cell_L_E_4
+    4300310: Cell_M_E_2
+    4300312: Cell_L_E_2
+    4300314: Cell_M_E_1
+    4300316: Cell_L_E_1
+    4300318: Cell_M_E_3
+    4300320: Cell_L_E_3
+    4300322: Cell_M_E_6
+    4300324: Cell_L_E_5
+    4300326: Cell_R_E_1
+    4300328: Cell_R_E_2
+    4300330: Cell_R_E_3
+    4300332: Cell_R_E_4
+    4300334: Cell_R_E_5
+    7400000: ion_1
+    7400002: ion_2
+    7400004: ion_3
+    7400006: ion_4
+    7400008: ion_5
+    7400010: ion_idle
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ion_1
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 11
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ion_2
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 17
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ion_3
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 23
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ion_4
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 29
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ion_5
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 35
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
