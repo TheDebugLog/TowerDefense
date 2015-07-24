@@ -1,0 +1,6 @@
+Tower Defense State:
+
+7/24/2015
+	Added the MainMenu and Setting scenes to the project
+	Set up the MainMenu with a MainMenuSceneController and created the SceneManager
+	From the mainmenu you can go to the Level1 scene through the SceneManager.
