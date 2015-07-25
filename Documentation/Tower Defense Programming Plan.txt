@@ -1,0 +1,7 @@
+Tower Defense Programming Plan:
+
+- Create the Scenes.
+- Implement the Scene Manager. This class is responsible to go from one scene to the other as well as define what scenes can transition to others.
+- Add the buttons and SceneControllers to call the sceneManager.
+- Implement the Back Button in the settings screen
+- Add the statistics to the GamePlay scene. They will be just labels that will be modified by dummy buttons

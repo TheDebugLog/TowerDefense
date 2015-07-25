@@ -2,7 +2,7 @@
 
 namespace TDL
 {
-    public enum Scene { MainMenu, Level1 }
+    public enum Scene { Credits, GameOver, GamePlay, MainMenu, Settings }
 }
 
 

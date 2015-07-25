@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -68,9 +65,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AI\AgentMotion.cs" />
     <Compile Include="Assets\Scripts\AI\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Credits\CreditsSceneController.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuSceneController.cs" />
-    <Compile Include="Assets\Scripts\MainMenu\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
+    <Compile Include="Assets\Scripts\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Settings\SettingsSceneController.cs" />
     <Compile Include="Assets\Scripts\ZacksDevScripts\BaseTurret.cs" />
     <Compile Include="Assets\Scripts\ZacksDevScripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\ZacksDevScripts\TurretTestEnemy.cs" />

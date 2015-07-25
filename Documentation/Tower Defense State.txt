@@ -1,5 +1,8 @@
 Tower Defense State:
-
+7/25/2015
+	Made the SceneManager a singleton
+	Created all the scenes: Credits, GameOver, GamePlay
+	The MainMenu scene transitions correctly.
 7/24/2015
 	Added the MainMenu and Setting scenes to the project
 	Set up the MainMenu with a MainMenuSceneController and created the SceneManager

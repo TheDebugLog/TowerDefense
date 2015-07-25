@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System;
 
 namespace TDL
 {
-    public class MainMenuSceneController : SceneController
+    public class SettingsSceneController : SceneController
     {
 
+       
     }
-}
 
+}
