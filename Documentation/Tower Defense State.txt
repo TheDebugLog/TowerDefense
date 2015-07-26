@@ -1,5 +1,13 @@
 Tower Defense State:
+7/26/2015
+	Save the information when going from gamePlay to Settings
+	Resetting the stats when going from GameOver to gamePlay.
+	Implemented the Quit Button
+	Created the class that will carry the data throughout the scenes
+    Updated the stats in the gamePlay scenes and carry them to the Game Over Scene
 7/25/2015
+	Started the class session which will carry the data of the game throughout the scenes
+	Added the class Statistics to store the stats of the game
 	Implemented the back button in the sceneManager
 	Made the SceneManager a singleton
 	Created all the scenes: Credits, GameOver, GamePlay

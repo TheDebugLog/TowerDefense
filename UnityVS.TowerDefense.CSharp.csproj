@@ -72,7 +72,9 @@
     <Compile Include="Assets\Scripts\MainMenu\MainMenuSceneController.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Session.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsSceneController.cs" />
+    <Compile Include="Assets\Scripts\Statistics.cs" />
     <Compile Include="Assets\Scripts\ZacksDevScripts\BaseTurret.cs" />
     <Compile Include="Assets\Scripts\ZacksDevScripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\ZacksDevScripts\TurretTestEnemy.cs" />
