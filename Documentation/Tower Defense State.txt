@@ -1,5 +1,7 @@
 Tower Defense State:
 7/26/2015
+	Added music and sound to the game.
+	Implemented the volume change in the settings
 	Save the information when going from gamePlay to Settings
 	Resetting the stats when going from GameOver to gamePlay.
 	Implemented the Quit Button

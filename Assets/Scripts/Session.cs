@@ -15,6 +15,7 @@ namespace TDL
 
         private Session() { }
 
+        #region Methods
         void Awake()
         {
             _instance = this;
@@ -25,6 +26,7 @@ namespace TDL
             GameStats = new Statistics(0, 0, 1);
             //TODO call the IOManager to get the information from the player settings
         }
+        #endregion
 
         #region Properties
         public static Session Instance

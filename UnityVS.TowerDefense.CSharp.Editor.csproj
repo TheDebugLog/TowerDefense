@@ -85,12 +85,6 @@
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -108,13 +102,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.TowerDefense.CSharp.Plugins.csproj">
-      <Project>{04BFCF65-6D5F-9DF7-5A3A-C091C5463939}</Project>
-      <Name>UnityVS.TowerDefense.CSharp.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityVS.TowerDefense.CSharp.csproj">
       <Project>{ED7F84CE-1509-F15C-F094-03B3DB24ED2A}</Project>
       <Name>UnityVS.TowerDefense.CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityVS.TowerDefense.CSharp.Plugins.csproj">
+      <Project>{04BFCF65-6D5F-9DF7-5A3A-C091C5463939}</Project>
+      <Name>UnityVS.TowerDefense.CSharp.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetStore\UniTrees v1.1\ReadMe.txt" />
+    <None Include="Assets\Dark Future\ReadMe.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
