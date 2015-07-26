@@ -25,6 +25,7 @@ namespace TDL
             {Scene.GamePlay, new List<Scene>{Scene.GameOver, Scene.Settings}},
             {Scene.GameOver, new List<Scene>{Scene.GamePlay}}
         };
+        Stack<Scene> _previousStack;
         #endregion
 
         private SceneManager(){}
@@ -38,14 +39,21 @@ namespace TDL
         // Use this for initialization
         void Start()
         {
+            _previousStack = new Stack<Scene>();
             DontDestroyOnLoad(gameObject);
             CurrentScene = Scene.MainMenu;
+        }
+
+        public void GoToPreviousScene()
+        {
+                GoToScene(_previousStack.Pop());   
         }
 
         public void LoadScene(Scene sceneToLoad)
         {
             if (Transitions[CurrentScene].Contains(sceneToLoad))
             {
+                _previousStack.Push(CurrentScene);
                 GoToScene(sceneToLoad);
             }
             else
@@ -57,7 +65,6 @@ namespace TDL
 
         void GoToScene(Scene sceneToLoad)
         {
-            PreviousScene = CurrentScene;
             CurrentScene = sceneToLoad;
             Application.LoadLevel(sceneToLoad.ToString());
         }
@@ -83,8 +90,7 @@ namespace TDL
 
         public Scene PreviousScene
         {
-            get;
-            private set;
+            get { return _previousStack.Peek(); }
         }
 
         public Dictionary<Scene, List<Scene>> Transitions

@@ -11,6 +11,11 @@ namespace TDL
             Scene sceneToLoad = (Scene)Enum.Parse(typeof(Scene), sceneName);
             SceneManager.Instance.LoadScene(sceneToLoad);
         }
+
+        public void GoToPreviousScene()
+        {
+            SceneManager.Instance.GoToPreviousScene();
+        }
     }
 
 }

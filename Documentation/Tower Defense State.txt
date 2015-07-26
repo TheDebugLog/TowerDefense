@@ -1,5 +1,6 @@
 Tower Defense State:
 7/25/2015
+	Implemented the back button in the sceneManager
 	Made the SceneManager a singleton
 	Created all the scenes: Credits, GameOver, GamePlay
 	The MainMenu scene transitions correctly.

@@ -67,6 +67,8 @@
     <Compile Include="Assets\Scripts\AI\Spawner.cs" />
     <Compile Include="Assets\Scripts\Credits\CreditsSceneController.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
+    <Compile Include="Assets\Scripts\GameOver\GameOverSceneController.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\GamePlaySceneController.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuSceneController.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
