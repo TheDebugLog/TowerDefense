@@ -4,19 +4,47 @@ using System.Collections;
 public class Projectile : MonoBehaviour {
 
 	public GameObject target;
-	public bool launch = false;
-	public float distance, speed;
+	public float distance, speed, killTimer, damage;
+	public int turretLevel = 1;
+	public TurretTestEnemy myEnemy;
+	public enum TurretType{
+		
+		DPS,
+		FIRE,
+		ICE,
+	}
+	public TurretType turretType;
+
 	// Use this for initialization
 	void Start () 
 	{
-	
+		
 	}
 
-	//public IEnumerator KillThySelf(float deathTime)
-	//{
-		//yield return new WaitForSeconds (deathTime);
-		//Destroy(gameObject);
-	//}
+	void ApplyDamage()
+	{
+		if(myEnemy != null)
+		{
+			switch(turretType)
+			{
+				default:
+					myEnemy.Damage(damage, "DPS", turretLevel);
+					break;
+				case TurretType.DPS:
+					myEnemy.Damage(damage, "DPS", turretLevel);
+					break;
+				case TurretType.FIRE:
+					myEnemy.Damage(damage, "FIRE", turretLevel);
+					break;
+				case TurretType.ICE:
+					myEnemy.Damage(damage, "ICE", turretLevel);
+					break;
+			}
+		}
+
+		KillThySelf();
+		
+	}
 
 	public void KillThySelf()
 	{
@@ -29,15 +57,10 @@ public class Projectile : MonoBehaviour {
 		transform.LookAt(target.transform);
 		transform.Translate(Vector3.forward*speed*Time.deltaTime); 
 		float dist = Vector3.Distance (transform.position, target.transform.position);
-		//if(launch)
-		//{
-			//launch = false;
-			//iTween.MoveTo(gameObject, iTween.Hash("position", target.transform.position, "easeType", "linear", "time", 0.4f));
-			//StartCoroutine(KillThySelf(0.4f));
-		//}
 		if(dist <= 0.3f)
 		{
-			KillThySelf();
+			ApplyDamage();
+			//KillThySelf();
 		}
 
 	}

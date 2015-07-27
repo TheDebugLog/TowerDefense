@@ -23,8 +23,8 @@ namespace UnityStandardAssets.CrossPlatformInput
 	}
 	#endif
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
         private void Start()
         {
 #if UNITY_EDITOR
@@ -44,7 +44,7 @@ namespace UnityStandardAssets.CrossPlatformInput
             }
         }
 
->>>>>>> origin/master
+//>>>>>>> origin/master
 #if UNITY_EDITOR
 
         private void OnEnable()

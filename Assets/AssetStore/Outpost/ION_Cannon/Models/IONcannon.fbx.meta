@@ -869,6 +869,7 @@ ModelImporter:
     7400006: ion_4
     7400008: ion_5
     7400010: ion_idle
+    7400012: ion_Idle
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -892,11 +893,11 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 1
       lastFrame: 11
-      wrapMode: 1
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -918,11 +919,11 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 1
       lastFrame: 17
-      wrapMode: 1
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -944,11 +945,11 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 1
       lastFrame: 23
-      wrapMode: 1
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -970,11 +971,11 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 1
       lastFrame: 29
-      wrapMode: 1
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -996,11 +997,11 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 1
       lastFrame: 35
-      wrapMode: 1
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
