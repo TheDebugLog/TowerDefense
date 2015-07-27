@@ -1,0 +1,13 @@
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\obj\Debug\UnityVS.TowerDefense.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Eduardo\Documents\GitHub\TowerDefense\obj\Debug\Assembly-CSharp-firstpass.pdb

@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Standard Assets/CrossPlatformInput.meta~HEAD.meta
 guid: 83f74a622b9c0514a8d8add22e32a05c
 timeCreated: 1437877971
+=======
+guid: 6e71a3e2fb5854e43823a9da25b68e21
+folderAsset: yes
+timeCreated: 1437710909
+>>>>>>> origin/EduardoBranch:Assets/UnityVS/Editor.meta
 licenseType: Free
 DefaultImporter:
   userData: 
