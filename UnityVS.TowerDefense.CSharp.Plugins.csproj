@@ -111,7 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetStore\UniTrees v1.1\ReadMe.txt" />
-    <None Include="Assets\Dark Future\ReadMe.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>

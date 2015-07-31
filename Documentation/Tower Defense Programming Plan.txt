@@ -11,7 +11,7 @@ Tower Defense Programming Plan:
 (Done)- Save the information when going from gamePlay to Settings
 (Done)- Resetting the stats when going from GameOver to gamePlay.
 (Done)- Implement the Quit Button
-- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
+(Done)- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
 (Done)- Add music and sound to the game.
 (Done)- Implement the volume change in the settings
 - Implement the Credits scene

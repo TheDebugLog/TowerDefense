@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace TDL
 {   
@@ -10,7 +11,6 @@ namespace TDL
     {
         #region Variables
         static Session _instance = null;
-
         #endregion
 
         private Session() { }
@@ -25,6 +25,37 @@ namespace TDL
         {
             GameStats = new Statistics(0, 0, 1);
             //TODO call the IOManager to get the information from the player settings
+            Leaderboard = IOManager.ReadLeaderboard();
+        }
+
+        public bool TryUpdateLeaderBoard()
+        {
+            bool leaderboardChanged = false;
+
+            //if the statistic is under the leaderboard you will return true.
+            if (Leaderboard.Count < 5 || Leaderboard[Leaderboard.Count-1].Score < GameStats.Score)
+            {
+                if (Leaderboard.Count < 5)
+                {
+                    Leaderboard.Add(GameStats);
+                }
+                else
+                {
+                    Leaderboard[Leaderboard.Count-1] = GameStats;
+                }
+                Leaderboard.Sort();
+                Leaderboard.Reverse();
+               
+                leaderboardChanged = true;
+            }
+
+            return leaderboardChanged;
+        }
+
+        void OnApplicationQuit()
+        {
+            //Leaderboard = new List<Statistics>();
+            IOManager.SaveLeaderboard(Leaderboard);
         }
         #endregion
 
@@ -39,6 +70,8 @@ namespace TDL
             get;
             set;
         }
+
+        public List<Statistics> Leaderboard {get; private set;}
         #endregion
     }
 }
