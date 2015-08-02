@@ -69,11 +69,14 @@
     <Compile Include="Assets\Scripts\AI\Spawner.cs" />
     <Compile Include="Assets\Scripts\AI\Wave.cs" />
     <Compile Include="Assets\Scripts\AI\WaveManager.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Credits\CreditsSceneController.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\GameOver\GameOverSceneController.cs" />
     <Compile Include="Assets\Scripts\GamePlay\GamePlaySceneController.cs" />
+    <Compile Include="Assets\Scripts\IOManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuSceneController.cs" />
+    <Compile Include="Assets\Scripts\Parser.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Session.cs" />

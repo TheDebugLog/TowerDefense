@@ -19,6 +19,7 @@ namespace TDL
         static SceneManager _instance = null;
         Dictionary<Scene, List<Scene>> _transitions = new Dictionary<Scene, List<Scene>>()
         {
+            {Scene.Splash,new List<Scene>{Scene.MainMenu}},
             {Scene.MainMenu,new List<Scene>{Scene.GamePlay,Scene.Settings}},
             {Scene.Settings, new List<Scene>{Scene.Credits, Scene.GamePlay, Scene.MainMenu}},
             {Scene.Credits, new List<Scene>{Scene.Settings}},
@@ -41,7 +42,7 @@ namespace TDL
         {
             _previousStack = new Stack<Scene>();
             DontDestroyOnLoad(gameObject);
-            CurrentScene = Scene.MainMenu;
+            CurrentScene = Scene.Splash;
         }
 
         public void GoToPreviousScene()

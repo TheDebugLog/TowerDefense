@@ -7,14 +7,12 @@ namespace TDL
 {
     public class GamePlaySceneController : SceneController
     {
-        #region Variables   
-        public Text creditsText;
+        #region Variables
+        public Text scoreText;
         public Text killsText;
         public Text waveText;
-
         public Button WaveButton;
-
-        int _credits = 0;
+        int _score = 0;
         int _kills = 0;
         int _wave = 0;
         #endregion
@@ -29,16 +27,16 @@ namespace TDL
         public override void GoToScene(string sceneName)
         {
             //Saves the statistics in the Session object
-            Statistics stats = new Statistics(_credits, _kills, _wave);
+            Statistics stats = new Statistics(_score, _kills, _wave);
             Session.Instance.GameStats = stats;
             base.GoToScene(sceneName);
             //GoToScene(Scene.GameOver);
         }
 
-        public void IncreaseCredits()
+        public void IncreaseScore()
         {
-            _credits++;
-            creditsText.text = "Credits: " + _credits.ToString();
+            _score++;
+            scoreText.text = "Score: " + _score.ToString();
         }
 
         public void IncreaseKills()
@@ -57,10 +55,10 @@ namespace TDL
 
         void SetUpStatistics(Statistics gameStats)
         {
-            _credits = gameStats.Credits;
+            _score = gameStats.Score;
             _kills = gameStats.Kills;
             _wave = gameStats.Wave;
-            creditsText.text = "Credits: " + _credits.ToString();
+            scoreText.text = "Score: " + _score.ToString();
             killsText.text = "Kills: " + _kills.ToString();
             waveText.text = "Wave: " + _wave.ToString();
         }

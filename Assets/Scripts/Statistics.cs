@@ -1,32 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+using System.Collections.Generic;
 
 namespace TDL
 {
-    public class Statistics
-    {
+      public class Statistics:IComparable<Statistics>
+      {
         public Statistics()
         {
-            Credits = 0;
+            Score = 0;
             Kills = 0;
             Wave = 0;
         }
 
-        public Statistics(int credits, int kills, int wave)
+        public Statistics(int score, int kills, int wave)
         {
-            Credits = credits;
+            Score = score;
             Kills = kills;
             Wave = wave;
         }
 
         #region Properties
-        public int Credits { get; private set; }
+        public int Score { get; private set; }
 
         public int Kills { get; private set; }
 
         public int Wave { get; private set; }
 
         #endregion
+
+        public int CompareTo(Statistics other)
+        {
+            return Score.CompareTo(other.Score);
+        }
     }
 
 }
