@@ -17,6 +17,7 @@ namespace TDL
 
         void Start()
         {
+            SetUpStatistics(Session.Instance.GameStats);
             Session.Instance.TryUpdateLeaderBoard();
             SetUpLeaderboard(Session.Instance.Leaderboard);
         }
