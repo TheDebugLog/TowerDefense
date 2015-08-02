@@ -22,7 +22,7 @@ namespace TDL {
         void OnTriggerEnter(Collider collision) {
             if (collision.gameObject.tag == "Beacon" && (currentTarget+1 < beaconList.transform.GetChildCount())) {
                 currentTarget++;
-                Debug.Log("Moving to beacon " + currentTarget);
+                //Debug.Log("Moving to beacon " + currentTarget);
             }
         }
     }
