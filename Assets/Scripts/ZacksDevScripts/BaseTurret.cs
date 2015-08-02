@@ -238,10 +238,6 @@ public class BaseTurret : MonoBehaviour {
 			animComponent.clip = idle;
 			animComponent.Play ();
 		}
-		else
-		{
-			return false;
-		}
 	}
 
 	IEnumerator RotateToTarget()

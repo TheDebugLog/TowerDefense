@@ -5,7 +5,7 @@ namespace TDL {
     public class Spawner : MonoBehaviour {
         //Our delegate and events to notify the wave as complete
         public delegate void SpawnerCompleteEventHandler(object sender, EventArgs args);
-        public event SpawnerCompleteEventHandler SpawnComplete;
+        public event SpawnerCompleteEventHandler SpawnCompleteEvent;
         
         public int minionCount = -1;
         public float waitTime = 0f;
@@ -25,7 +25,7 @@ namespace TDL {
             if (minionCount > 0) {
                 _ready = true;
             } else {
-                SpawnComplete(this, EventArgs.Empty);
+                SpawnCompleteEvent(this, EventArgs.Empty);
             }
         }
 
@@ -49,7 +49,7 @@ namespace TDL {
                 GameObject minion = (GameObject)GameObject.Instantiate(prefab);
                 minion.transform.position = this.transform.position;
             } else {
-                SpawnComplete(this, EventArgs.Empty);
+                SpawnCompleteEvent(this, EventArgs.Empty);
                 _ready = false;
             }
         }

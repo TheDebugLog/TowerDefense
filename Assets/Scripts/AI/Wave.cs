@@ -8,7 +8,7 @@ namespace TDL {
     public class Wave : MonoBehaviour {
         //Our delegate and events to notify the wave as complete
         public delegate void WaveCompleteEventHandler(object sender, EventArgs args);
-        public event WaveCompleteEventHandler WaveComplete;
+        public event WaveCompleteEventHandler WaveCompleteEvent;
 
         //Our list of spawners to create
         public List<Spawner> _spawners;        
@@ -42,10 +42,10 @@ namespace TDL {
             _currentSpawnerIndex++;
             if (_currentSpawnerIndex < _spawners.Count) {
                 _currentSpawner = _spawners[_currentSpawnerIndex];
-                _currentSpawner.SpawnComplete += new Spawner.SpawnerCompleteEventHandler(OnSpawnComplete);
+                _currentSpawner.SpawnCompleteEvent += new Spawner.SpawnerCompleteEventHandler(OnSpawnComplete);
                 _currentSpawner.BeginSpawn();
             } else {
-                WaveComplete(this, EventArgs.Empty);
+                WaveCompleteEvent(this, EventArgs.Empty);
             }
         }
 
@@ -53,7 +53,7 @@ namespace TDL {
         //to next spawner.
         private void OnSpawnComplete(object sender, EventArgs args) {
             Debug.Log("Spawning complete!");
-            _currentSpawner.SpawnComplete -= OnSpawnComplete;
+            _currentSpawner.SpawnCompleteEvent -= OnSpawnComplete;
             NextSpawner();
         }
     }

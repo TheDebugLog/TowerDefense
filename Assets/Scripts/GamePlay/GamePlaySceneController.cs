@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 namespace TDL
 {
@@ -19,6 +20,7 @@ namespace TDL
         void Start()
         {
             SetUpStatistics(Session.Instance.GameStats);
+            WaveManager.Instance.NextWaveEvent += new WaveManager.NextWaveEventHandler(OnNextWave);
         }
 
         public override void GoToScene(string sceneName)
@@ -56,6 +58,10 @@ namespace TDL
             creditsText.text = "Credits: " + _credits.ToString();
             killsText.text = "Kills: " + _kills.ToString();
             waveText.text = "Wave: " + _wave.ToString();
+        }
+
+        private void OnNextWave(object sender, EventArgs args) {
+            IncreaseWave();
         }
         #endregion
     }
