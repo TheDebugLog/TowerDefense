@@ -5,9 +5,13 @@ using System.Text;
 using UnityEngine;
 
 namespace TDL {
+    public class NextWaveEventArgs : EventArgs {
+        public bool GameOver { get; set; }
+    }
+
     public class WaveManager : MonoBehaviour {
         //Our delegate and events to notify the wave as complete
-        public delegate void NextWaveEventHandler(object sender, EventArgs args);
+        public delegate void NextWaveEventHandler(object sender, NextWaveEventArgs args);
         public event NextWaveEventHandler NextWaveEvent;
 
         //Public for debugging.  Allows us to see hierarchy
@@ -35,7 +39,6 @@ namespace TDL {
 
         //Begin the waves starting from the 0th
         void Start() {
-            NextWave();
         }
 
         public Wave CurrentWave {
@@ -51,7 +54,6 @@ namespace TDL {
                 _currentWave = _waves[_currentWaveIndex];
                 _currentWave.WaveCompleteEvent += new Wave.WaveCompleteEventHandler(OnWaveComplete);
                 _currentWave.BeginSpawning();
-                NextWaveEvent(this, EventArgs.Empty);
             } else {
                 Debug.Log("Waves complete.  GAME OVER");
             }
@@ -62,7 +64,15 @@ namespace TDL {
         private void OnWaveComplete(object sender, EventArgs args) {
             Debug.Log("Wave complete!");
             _currentWave.WaveCompleteEvent -= OnWaveComplete;
-            NextWave();
+
+            NextWaveEventArgs nextWaveArgs = new NextWaveEventArgs();
+            if (_currentWaveIndex + 1 >= _waves.Count) {
+                nextWaveArgs.GameOver = true;
+            } else {
+                nextWaveArgs.GameOver = false;
+            }
+
+            NextWaveEvent(this, nextWaveArgs);
         }
     }
 }

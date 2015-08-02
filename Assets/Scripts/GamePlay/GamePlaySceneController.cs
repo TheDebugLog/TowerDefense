@@ -7,13 +7,16 @@ namespace TDL
 {
     public class GamePlaySceneController : SceneController
     {
-        #region Variables
+        #region Variables   
         public Text creditsText;
         public Text killsText;
         public Text waveText;
+
+        public Button WaveButton;
+
         int _credits = 0;
         int _kills = 0;
-        int _wave = 1;
+        int _wave = 0;
         #endregion
 
         #region Methods
@@ -48,6 +51,8 @@ namespace TDL
         {
             _wave++;
             waveText.text = "Wave: " + _wave.ToString();
+            WaveManager.Instance.NextWave();
+            WaveButton.interactable = false;
         }
 
         void SetUpStatistics(Statistics gameStats)
@@ -60,8 +65,12 @@ namespace TDL
             waveText.text = "Wave: " + _wave.ToString();
         }
 
-        private void OnNextWave(object sender, EventArgs args) {
-            IncreaseWave();
+        private void OnNextWave(object sender, NextWaveEventArgs args) {
+            if(args.GameOver) {
+                Debug.Log("Received game over message!");
+            } else {
+                WaveButton.interactable = true;
+            }
         }
         #endregion
     }

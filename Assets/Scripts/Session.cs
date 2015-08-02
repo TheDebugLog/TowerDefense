@@ -22,7 +22,7 @@ namespace TDL
 
         void Start()
         {
-            GameStats = new Statistics(0, 0, 1);
+            GameStats = new Statistics(0, 0, 0);
             //TODO call the IOManager to get the information from the player settings
         }
 

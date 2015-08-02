@@ -19,7 +19,8 @@ namespace TDL {
             _agent.SetDestination(beaconList.transform.GetChild(currentTarget).position);
         }
 
-        void OnTriggerEnter(Collider collision) {
+        protected void OnTriggerEnter(Collider collision) {
+            //Debug.Log("Agent handler");
             if (collision.gameObject.tag == "Beacon" && (currentTarget+1 < beaconList.transform.GetChildCount())) {
                 currentTarget++;
                 //Debug.Log("Moving to beacon " + currentTarget);

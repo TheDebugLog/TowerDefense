@@ -9,7 +9,7 @@ namespace TDL
         {
             Credits = 0;
             Kills = 0;
-            Wave = 1;
+            Wave = 0;
         }
 
         public Statistics(int credits, int kills, int wave)

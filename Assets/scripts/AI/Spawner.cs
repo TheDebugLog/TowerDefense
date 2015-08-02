@@ -45,7 +45,7 @@ namespace TDL {
             if (_numSpawned < minionCount) {
                 _numSpawned++;
                 _lastSpawnTime = Time.time;
-                Debug.Log("SPAWN! "+_numSpawned.ToString());
+                //Debug.Log("SPAWN! "+_numSpawned.ToString());
                 GameObject minion = (GameObject)GameObject.Instantiate(prefab);
                 minion.transform.position = this.transform.position;
             } else {
