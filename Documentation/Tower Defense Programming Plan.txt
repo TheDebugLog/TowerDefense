@@ -1,0 +1,23 @@
+Tower Defense Programming Plan:
+
+(Done)- Create the Scenes.
+(Done)- Implement the Scene Manager. This class is responsible to go from one scene to the other as well as define what scenes can transition to others.
+(Done)- Add the buttons and SceneControllers to call the sceneManager.
+(Done)- Implement the Back Button in the settings screen
+(Done)- Add the statistics to the GamePlay scene. They will be just labels that will be modified by dummy buttons
+(Done)- Create the class that will store the stats: Statistics 
+(Done)- Create the class that will carry the data throughout the scenes
+(Done)- Update the stats in the gamePlay scenes and carry them to the Game Over Scene
+(Done)- Save the information when going from gamePlay to Settings
+(Done)- Resetting the stats when going from GameOver to gamePlay.
+(Done)- Implement the Quit Button
+<<<<<<< HEAD
+- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
+- Add music and sound to the game.
+- Implement the volume change in the settings
+=======
+(Done)- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
+(Done)- Add music and sound to the game.
+(Done)- Implement the volume change in the settings
+>>>>>>> origin/EduardoBranch
+- Implement the Credits scene
