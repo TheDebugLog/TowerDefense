@@ -1,10 +1,10 @@
 Tower Defense State:
+8/7/2015
+	Implemented the credits Scene
+	Changed the canvases to "Change with Screen Size"
 7/26/2015
-<<<<<<< HEAD
-=======
 	Added music and sound to the game.
 	Implemented the volume change in the settings
->>>>>>> origin/EduardoBranch
 	Save the information when going from gamePlay to Settings
 	Resetting the stats when going from GameOver to gamePlay.
 	Implemented the Quit Button

@@ -11,13 +11,12 @@ Tower Defense Programming Plan:
 (Done)- Save the information when going from gamePlay to Settings
 (Done)- Resetting the stats when going from GameOver to gamePlay.
 (Done)- Implement the Quit Button
-<<<<<<< HEAD
-- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
-- Add music and sound to the game.
-- Implement the volume change in the settings
-=======
 (Done)- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
 (Done)- Add music and sound to the game.
 (Done)- Implement the volume change in the settings
->>>>>>> origin/EduardoBranch
-- Implement the Credits scene
+(Done)- Save the stats to the leaderboard if it is high enough. This will happen in the GameOver scene.
+(Done)- Add music and sound to the game.
+(Done)- Implement the volume change in the settings
+(Done)- Implement the Credits scene
+- Add the real UI to the game
+- Set up the anchors properly
