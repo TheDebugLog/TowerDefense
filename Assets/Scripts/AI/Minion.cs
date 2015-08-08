@@ -9,12 +9,31 @@ using UnityEngine;
 namespace TDL {
     public class Minion : AgentMotion {
 
+        //Our delegate and events to notify the minion is dead 
+        public delegate void MinionDeathEventHandler(object sender, EventArgs args);
+        public event MinionDeathEventHandler MinionDeathEvent;
+
         public bool isAlive = true;
         public float health = 100;
 
+        private static GamePlaySceneController _gameplaySceneController = null;
+
         void Awake() {
+            if (_gameplaySceneController == null) {
+                GameObject go = GameObject.FindGameObjectWithTag("GamePlayController");
+                if(go != null) {
+                    _gameplaySceneController = go.GetComponent<GamePlaySceneController>();
+                }
+            }
         }
 
+        void Start() {
+            base.Start();
+            if (_gameplaySceneController != null) {
+                MinionDeathEvent += new MinionDeathEventHandler(_gameplaySceneController.OnMinionDeath);
+            }
+        }
+        
         public float Health {
             get { return health; }
         }
@@ -102,6 +121,10 @@ namespace TDL {
 
         public void Die()
         {
+            if (MinionDeathEvent != null) {
+                MinionDeathEvent(this, EventArgs.Empty);
+                MinionDeathEvent = null;
+            }
             isAlive = false;
             Destroy(gameObject);
         }

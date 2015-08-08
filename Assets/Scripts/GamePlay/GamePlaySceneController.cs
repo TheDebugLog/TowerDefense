@@ -42,19 +42,19 @@ namespace TDL
         public void IncreaseScore()
         {
             _score++;
-            scoreText.text = "Score: " + _score.ToString();
+            scoreText.text = ScoreText;
         }
 
         public void IncreaseKills()
         {
             _kills++;
-            killsText.text = "Kills: " + _kills.ToString();
+            killsText.text = KillText;
         }
 
         public void IncreaseWave()
         {
             _wave++;
-            waveText.text = "Wave: " + _wave.ToString();
+            waveText.text = WaveText;
             WaveManager.Instance.NextWave();
             WaveButton.interactable = false;
         }
@@ -72,9 +72,27 @@ namespace TDL
             _score = gameStats.Score;
             _kills = gameStats.Kills;
             _wave = gameStats.Wave;
-            scoreText.text = "Score: " + _score.ToString();
-            killsText.text = "Kills: " + _kills.ToString();
-            waveText.text = "Wave: " + _wave.ToString();
+            scoreText.text = ScoreText;
+            killsText.text = KillText;
+            waveText.text = WaveText;
+        }
+
+        public string KillText {
+            get {
+                return "Kills: " + _kills.ToString();
+            }
+        }
+
+        public string ScoreText {
+            get {
+                return "Score: " + _score.ToString();
+            }
+        }
+
+        public string WaveText {
+            get {
+                return "Wave: " + _wave.ToString();
+            }
         }
 
         private void OnNextWave(object sender, NextWaveEventArgs args) {
@@ -107,6 +125,14 @@ namespace TDL
                     }
                 }
             }
+        }
+        #endregion
+
+        #region EventHandlers
+        public void OnMinionDeath(object sender, EventArgs args) {
+            _kills++;
+            killsText.text = KillText;
+            Debug.Log("A minion died!");
         }
         #endregion
     }

@@ -11,7 +11,7 @@ namespace TDL {
         public int currentTarget = 0;
 
 
-        void Start() {
+        public void Start() {
             agent = GetComponent<NavMeshAgent>();
             beaconList = GameObject.FindWithTag("BeaconList");
         }
