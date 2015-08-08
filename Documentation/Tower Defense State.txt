@@ -1,5 +1,6 @@
 Tower Defense State:
 8/7/2015
+	Fixed a problem with the buttons of the credits scene that lost the reference to the functions
 	Implemented the credits Scene
 	Changed the canvases to "Change with Screen Size"
 7/26/2015
