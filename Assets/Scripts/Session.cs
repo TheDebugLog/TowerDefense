@@ -10,20 +10,34 @@ namespace TDL
     public class Session : MonoBehaviour
     {
         #region Variables
-        static Session _instance = null;
+        private static Session _instance = null;
 
         #endregion
 
         private Session() { }
 
+        #region Properties
+        public static Session Instance
+        {
+            get { return _instance; }
+        }
+
+        public Statistics GameStats
+        {
+            get;
+            set;
+        }
+
+        public List<Statistics> Leaderboard { get; private set; }
+        #endregion
 
         #region Methods
-        void Awake()
+        private void Awake()
         {
             _instance = this;
         }
 
-        void Start()
+        private void Start()
         {
             GameStats = new Statistics(0, 0, 0);
           //call the IOManager to get the information from the player settings
@@ -55,27 +69,14 @@ namespace TDL
             return leaderboardChanged;
         }
 
-        void OnApplicationQuit()
+        private void OnApplicationQuit()
         {
             //Leaderboard = new List<Statistics>();
             IOManager.SaveLeaderboard(Leaderboard);
         }
         #endregion
 
-        #region Properties
-        public static Session Instance
-        {
-            get { return _instance; }
-        }
-
-        public Statistics GameStats
-        {
-            get;
-            set;
-        }
-
-        public List<Statistics> Leaderboard {get; private set;}
-        #endregion
+        
     }
 }
 

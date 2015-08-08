@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace TDL
 {
+    //TODO Add description Eduardo Castillo Fernandez 8/8/2015
       public class Statistics:IComparable<Statistics>
       {
         public Statistics()

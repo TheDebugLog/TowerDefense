@@ -5,6 +5,7 @@ using System;
 
 namespace TDL
 {
+    //Todo Add description 
     public class GamePlaySceneController : SceneController
     {
         #region Variables
@@ -16,11 +17,11 @@ namespace TDL
         public bool addTurretMode = false;
         public Camera sceneCamera;
         public GameObject turretPrefab;
-        int _score = 0;
-        int _kills = 0;
-        int _wave = 0;
-        int _turret = 0;
-        RaycastHit hit;
+        private int _score = 0;
+        private int _kills = 0;
+        private int _wave = 0;
+        private int _turret = 0;
+        private RaycastHit hit;
         #endregion
 
         #region Methods

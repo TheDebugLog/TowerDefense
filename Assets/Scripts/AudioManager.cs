@@ -10,11 +10,29 @@ namespace TDL
     public class AudioManager : MonoBehaviour
     {
         #region Variables
-        AudioSource _applicationMusic;
-        static AudioManager _instance = null;
+        private AudioSource _applicationMusic;
+        private static AudioManager _instance = null;
         #endregion
 
         private AudioManager() { }
+
+        #region Properties
+        public static AudioManager Instance
+        {
+            get
+            {
+                return _instance;
+            }
+        }
+
+        public float MusicVolume
+        {
+            get
+            {
+                return _applicationMusic.volume;
+            }
+        }
+        #endregion
 
         #region Methods
         void Awake()
@@ -50,23 +68,7 @@ namespace TDL
         }
         #endregion
 
-        #region Properties
-        public static AudioManager Instance
-        {
-            get 
-            {
-                return _instance;
-            }
-        }
-
-        public float MusicVolume 
-        {
-            get
-            {
-                return _applicationMusic.volume;
-            }
-        }
-        #endregion
+      
     }
 
 }

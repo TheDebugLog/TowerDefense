@@ -4,6 +4,7 @@ using System;
 
 namespace TDL
 {
+    //TODO add description   Eduardo Castillo Fernandez  8/8/2015
     public class SceneController : MonoBehaviour
     {
         public virtual void GoToScene(string sceneName)

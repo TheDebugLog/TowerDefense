@@ -9,8 +9,8 @@ namespace TDL
     public class CreditsMovement : MonoBehaviour
     {
         #region Variables
-        bool _pressed = false;
-        float _yMousePosition = 0f;
+        private bool _pressed = false;
+        private float _yMousePosition = 0f;
         // public float _creditLimit = 0;
         // float _creditsInitialY = 0;
         public RectTransform _topLimit;
