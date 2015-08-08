@@ -155,10 +155,12 @@ namespace TDL
         #endregion
 
         #region EventHandlers
-        public void OnMinionDeath(object sender, EventArgs args) {
+        public void OnMinionDeath(object sender, MinionDeathArgs args) {
             _kills++;
             killsText.text = KillText;
-            Debug.Log("A minion died!");
+            _score += args.Points;
+            scoreText.text = ScoreText;
+            //Debug.Log("A minion died!");
         }
         #endregion
     }

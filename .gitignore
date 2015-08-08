@@ -23,9 +23,15 @@ Temp
 
 #Unity files
 UnityVS.VersionSpecific.dll
+*.dll
 
 #VS files
 *.sln
+*.csproj
+UnityVS.TowerDefense.CSharp.Editor.csproj
+UnityVS.TowerDefense.CSharp.Plugins.csproj
+UnityVS.TowerDefense.CSharp.csproj
+UnityVS.TowerDefense.v12.suo
 
 # =========================
 # Operating System Files

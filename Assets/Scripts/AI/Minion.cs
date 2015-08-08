@@ -7,14 +7,19 @@ using UnityEngine;
 
 //Basic minion with health that moves on navmesh
 namespace TDL {
+    public class MinionDeathArgs : EventArgs {
+        public int Points { get; set; }
+    }
+
     public class Minion : AgentMotion {
 
         //Our delegate and events to notify the minion is dead 
-        public delegate void MinionDeathEventHandler(object sender, EventArgs args);
+        public delegate void MinionDeathEventHandler(object sender, MinionDeathArgs args);
         public event MinionDeathEventHandler MinionDeathEvent;
 
         public bool isAlive = true;
         public float health = 100;
+        public int points = 3;
 
         private static GamePlaySceneController _gameplaySceneController = null;
 
@@ -122,7 +127,9 @@ namespace TDL {
         public void Die()
         {
             if (MinionDeathEvent != null) {
-                MinionDeathEvent(this, EventArgs.Empty);
+                MinionDeathArgs mda = new MinionDeathArgs();
+                mda.Points = points;
+                MinionDeathEvent(this, mda);
                 MinionDeathEvent = null;
             }
             isAlive = false;
