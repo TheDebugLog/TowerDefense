@@ -53,6 +53,7 @@
      <Compile Include="Assets\scripts\AI\Wave.cs" />
      <Compile Include="Assets\scripts\AI\WaveManager.cs" />
      <Compile Include="Assets\scripts\AudioManager.cs" />
+     <Compile Include="Assets\scripts\Credits\CreditsMovement.cs" />
      <Compile Include="Assets\scripts\Credits\CreditsSceneController.cs" />
      <Compile Include="Assets\scripts\Enums.cs" />
      <Compile Include="Assets\scripts\GameOver\GameOverSceneController.cs" />
@@ -69,6 +70,7 @@
      <Compile Include="Assets\scripts\Turret\BaseTurret.cs" />
      <Compile Include="Assets\scripts\Turret\Projectile.cs" />
      <Compile Include="Assets\scripts\Turret\TurretTestEnemy.cs" />
+     <None Include="Assets\AssetStore\Snowconesolid Assets\Super Rubber Duck Pack\Snowconesolid Assets ReadMe.txt" />
      <None Include="Assets\AssetStore\UniTrees v1.1\ReadMe.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

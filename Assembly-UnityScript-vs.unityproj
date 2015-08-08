@@ -49,6 +49,7 @@
      <Compile Include="Assets\AssetStore\UniTrees v1.1\- Demo Scene OK to delete\scripts\MouseLookPlus.js" />
      <Compile Include="Assets\AssetStore\UniTrees v1.1\- Demo Scene OK to delete\scripts\PhysicsFPSController.js" />
      <Compile Include="Assets\AssetStore\UniTrees v1.1\- Demo Scene OK to delete\scripts\loader.js" />
+     <None Include="Assets\AssetStore\Snowconesolid Assets\Super Rubber Duck Pack\Snowconesolid Assets ReadMe.txt" />
      <None Include="Assets\AssetStore\UniTrees v1.1\ReadMe.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
