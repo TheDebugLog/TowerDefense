@@ -63,32 +63,33 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AI\AgentMotion.cs" />
-    <Compile Include="Assets\Scripts\AI\ExampleSingleton.cs" />
-    <Compile Include="Assets\Scripts\AI\Minion.cs" />
-    <Compile Include="Assets\Scripts\AI\Spawner.cs" />
-    <Compile Include="Assets\Scripts\AI\Wave.cs" />
-    <Compile Include="Assets\Scripts\AI\WaveManager.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\Credits\CreditsMovement.cs" />
-    <Compile Include="Assets\Scripts\Credits\CreditsSceneController.cs" />
-    <Compile Include="Assets\Scripts\Enums.cs" />
-    <Compile Include="Assets\Scripts\GameOver\GameOverSceneController.cs" />
-    <Compile Include="Assets\Scripts\GamePlay\GamePlaySceneController.cs" />
-    <Compile Include="Assets\Scripts\GamePlay\OccupiableSpace.cs" />
-    <Compile Include="Assets\Scripts\IOManager.cs" />
-    <Compile Include="Assets\Scripts\MainMenu\MainMenuSceneController.cs" />
-    <Compile Include="Assets\Scripts\Parser.cs" />
-    <Compile Include="Assets\Scripts\SceneController.cs" />
-    <Compile Include="Assets\Scripts\SceneManager.cs" />
-    <Compile Include="Assets\Scripts\Session.cs" />
-    <Compile Include="Assets\Scripts\Settings\SettingsSceneController.cs" />
-    <Compile Include="Assets\Scripts\Statistics.cs" />
-    <Compile Include="Assets\Scripts\Turret\BaseTurret.cs" />
-    <Compile Include="Assets\Scripts\Turret\Projectile.cs" />
-    <Compile Include="Assets\Scripts\Turret\TurretTestEnemy.cs" />
+    <Compile Include="Assets\scripts\AI\AgentMotion.cs" />
+    <Compile Include="Assets\scripts\AI\ExampleSingleton.cs" />
+    <Compile Include="Assets\scripts\AI\Minion.cs" />
+    <Compile Include="Assets\scripts\AI\Spawner.cs" />
+    <Compile Include="Assets\scripts\AI\Wave.cs" />
+    <Compile Include="Assets\scripts\AI\WaveManager.cs" />
+    <Compile Include="Assets\scripts\AudioManager.cs" />
+    <Compile Include="Assets\scripts\Credits\CreditsMovement.cs" />
+    <Compile Include="Assets\scripts\Credits\CreditsSceneController.cs" />
+    <Compile Include="Assets\scripts\Enums.cs" />
+    <Compile Include="Assets\scripts\GameOver\GameOverSceneController.cs" />
+    <Compile Include="Assets\scripts\GamePlay\GamePlaySceneController.cs" />
+    <Compile Include="Assets\scripts\GamePlay\OccupiableSpace.cs" />
+    <Compile Include="Assets\scripts\IOManager.cs" />
+    <Compile Include="Assets\scripts\MainMenu\MainMenuSceneController.cs" />
+    <Compile Include="Assets\scripts\Parser.cs" />
+    <Compile Include="Assets\scripts\SceneController.cs" />
+    <Compile Include="Assets\scripts\SceneManager.cs" />
+    <Compile Include="Assets\scripts\Session.cs" />
+    <Compile Include="Assets\scripts\Settings\SettingsSceneController.cs" />
+    <Compile Include="Assets\scripts\Statistics.cs" />
+    <Compile Include="Assets\scripts\Turret\BaseTurret.cs" />
+    <Compile Include="Assets\scripts\Turret\Projectile.cs" />
+    <Compile Include="Assets\scripts\Turret\TurretTestEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AssetStore\Snowconesolid Assets\Super Rubber Duck Pack\Snowconesolid Assets ReadMe.txt" />
     <None Include="Assets\AssetStore\UniTrees v1.1\ReadMe.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

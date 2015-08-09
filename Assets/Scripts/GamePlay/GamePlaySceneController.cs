@@ -90,7 +90,7 @@ namespace TDL
             if(addTurretMode == true)
             {
                 //This needs to be where I click
-                Vector3 fwd = sceneCamera.gameObject.transform.TransformDirection(Vector3.forward);
+               /* Vector3 fwd = sceneCamera.gameObject.transform.TransformDirection(Vector3.forward);
                 if(Physics.Raycast(sceneCamera.gameObject.transform.position, fwd, out hit))
                 {
                     if(hit.collider.gameObject.tag == "OccupiableSpace")
@@ -103,6 +103,32 @@ namespace TDL
                             Instantiate(turretPrefab, new Vector3(hitPosition.x, (hitPosition.y + verticalAdjuster), hitPosition.z),Quaternion.identity);
                             placementCube.isOccupied = true;
                             addTurretMode = false;
+                        }
+                    }
+                }*/
+                if(Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("Mouse button is pressed");
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit = new RaycastHit();
+                    if(Physics.Raycast(ray,out hit))
+                    {
+                        if(hit.collider.tag =="OccupiableSpace")
+                        {
+                            OccupiableSpace placementCube = hit.collider.gameObject.GetComponent<OccupiableSpace>();
+                            if(placementCube.isOccupied == false)
+                            {
+                                Vector3 hitPosition = hit.collider.gameObject.transform.position;
+                                GameObject spawnedTurret = Instantiate(turretPrefab, new Vector3(hitPosition.x, (hitPosition.y + 2f ), hitPosition.z),Quaternion.identity) as GameObject;
+                                spawnedTurret.transform.localScale = new Vector3(0.004f, 0.004f, 0.004f);
+                                placementCube.isOccupied = true;
+                                addTurretMode = false;
+                            }
+                            
+                        }
+                        else
+                        {
+                            Debug.Log("Not a good placement or space already occupied");
                         }
                     }
                 }

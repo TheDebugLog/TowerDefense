@@ -210,11 +210,14 @@ namespace TDL {
 				//Looks for the enemy that is closest to the farthest waypoint
 				for(int p = 0; p < enemiesFarthestAlong.Count; p++)
 				{
-					float distanceToTarget = Vector3.Distance(enemiesFarthestAlong[p].gameObject.transform.position, enemiesFarthestAlong[p].beaconList.transform.GetChild(highestChildIndex).position);
-					if(distanceToTarget <= closestEnemyDistance)
+					if(enemiesFarthestAlong[p] != null && enemiesFarthestAlong[p].beaconList != null)
 					{
-						closestEnemyDistance = distanceToTarget;
-						_closestEnemyToTarget = enemiesFarthestAlong[p];
+						float distanceToTarget = Vector3.Distance(enemiesFarthestAlong[p].gameObject.transform.position, enemiesFarthestAlong[p].beaconList.transform.GetChild(highestChildIndex).position);
+						if(distanceToTarget <= closestEnemyDistance)
+						{
+							closestEnemyDistance = distanceToTarget;
+							_closestEnemyToTarget = enemiesFarthestAlong[p];
+						}
 					}
 				}
 				//For Debug
@@ -372,7 +375,18 @@ namespace TDL {
 			//forwardY = new Vector3 (0.0f, forwardY.y, 0.0f);
 			float angleY = Vector3.Angle(targetDirectionY, forwardY);
 			float eularRotationY = horizontalRotComponent.transform.localRotation.eulerAngles.y;
-			eularRotationY -= angleY;
+			Vector3 relativePoint = barrelPosition.transform.InverseTransformPoint(target.transform.position); 
+			if (relativePoint.x < 0.0f) 
+			{
+				Debug.Log("Object is to the left");
+				eularRotationY -= angleY;
+			} 
+			else if(relativePoint.x > 0.0) 
+			{
+				Debug.Log("Object is to the right");
+				eularRotationY += angleY;
+			}
+			
 			Vector3 VerticalEnemyTarget = new Vector3 (target.transform.position.x, target.transform.position.y, target.transform.position.z);
 			turnCompForLerp.transform.LookAt (VerticalEnemyTarget);
 			//Debug.Log ("--------------------------------- OldY = " + horizontalRotComponent.transform.localRotation.eulerAngles.y);
@@ -381,7 +395,7 @@ namespace TDL {
 			//Debug.Log ("--------------------------------- VreticalComp EularX = " + turnCompForLerp.transform.localRotation.eulerAngles.x);
 			Vector3 targetRotationY = new Vector3 (horizontalRotComponent.transform.localRotation.eulerAngles.x, eularRotationY, horizontalRotComponent.transform.localRotation.eulerAngles.z);
 			Vector3 targetRotationX = new Vector3 (turnCompForLerp.transform.localRotation.eulerAngles.x, 0.0f, verticalRotComponent.transform.localRotation.eulerAngles.z);
-			iTween.RotateTo(horizontalRotComponent, iTween.Hash("rotation", targetRotationY, "isLocal", true, "easeType", "linear", "time", 0.5f));
+			iTween.RotateTo(horizontalRotComponent, iTween.Hash("rotation", targetRotationY, "easeType", "linear", "time", 0.5f));
 			iTween.RotateTo(verticalRotComponent, iTween.Hash("rotation", targetRotationX, "isLocal", true, "easeType", "linear", "time", 0.5f));
 			yield return new WaitForSeconds (0.5f);
 			_lockedOnTarget = true;

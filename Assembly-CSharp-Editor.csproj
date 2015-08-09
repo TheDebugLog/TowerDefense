@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\Editor\PathUtils.cs" />
+     <None Include="Assets\AssetStore\Snowconesolid Assets\Super Rubber Duck Pack\Snowconesolid Assets ReadMe.txt" />
      <None Include="Assets\AssetStore\UniTrees v1.1\ReadMe.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
