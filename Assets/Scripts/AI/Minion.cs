@@ -21,6 +21,8 @@ namespace TDL {
         public float health = 100;
         public int points = 3;
 
+        private float _speed = 10.0f;
+
         private static GamePlaySceneController _gameplaySceneController = null;
 
         void Awake() {
@@ -43,6 +45,10 @@ namespace TDL {
             get { return health; }
         }
 
+        public float Speed {
+            get { return _speed; }
+        }
+
         /*public int TakeDamage(int damage) {
             health = health - damage;
 
@@ -57,7 +63,21 @@ namespace TDL {
             GameObject.Destroy(this.gameObject);
         }*/
 
-        public void Damage(float damage, string damageType, int damageDuration)
+        public void DoDamage(float damage)
+        {
+            health -= damage;
+            if(health <= 0.0f)
+            {
+                Die();
+            }
+        }
+
+        public void Slow(float slowSpeed)
+        {
+            agent.speed = slowSpeed;
+        }
+
+        /*public void Damage(float damage, string damageType, int damageDuration)
         {
             switch(damageType)
             {
@@ -122,7 +142,7 @@ namespace TDL {
                     agent.speed = speed;
                 }
             }
-        }
+        }*/
 
         public void Die()
         {

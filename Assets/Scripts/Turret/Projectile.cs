@@ -12,6 +12,7 @@ namespace TDL {
 		public float killDistance = 0.5f, areaEffectRange = 2.0f;
 		//public TurretTestEnemy myEnemy;
 		public Minion myEnemy;
+		public int turretID = 0;
 		public Minion[] enemies;
 		public enum TurretType{
 			
@@ -35,19 +36,15 @@ namespace TDL {
 			{
 				switch(turretType)
 				{
-					default:
-						myEnemy.Damage(damage, "DPS", turretLevel);
-						break;
 					case TurretType.DPS:
-						myEnemy.Damage(damage, "DPS", turretLevel);
+						myEnemy.DoDamage(damage);
 						break;
 					case TurretType.FIRE:
 						FindEnemiesInRangeOfFire();
-						myEnemy.Damage(damage, "FIRE", turretLevel);
 						break;
 					case TurretType.ICE:
 						FindEnemiesInRangeOfIce();
-						myEnemy.Damage(damage, "ICE", turretLevel);
+						//myEnemy.Damage(damage, "ICE", turretLevel);
 						break;
 				}
 			}
@@ -56,28 +53,84 @@ namespace TDL {
 			
 		}
 
+		DealDamageOverTime GetDDOT(GameObject enemyGameObject)
+		{
+			DealDamageOverTime ddot = enemyGameObject.GetComponent<DealDamageOverTime>();
+			if(ddot == null)
+			{
+			 	ddot = enemyGameObject.AddComponent<DealDamageOverTime>() as DealDamageOverTime;
+			 	ddot.myTurretID = turretID;
+			 	return ddot;
+			}
+			else
+			{
+				if(ddot.myTurretID == turretID)
+				{
+					//ddot.ApplyDOT(damage, turretLevel);
+					return ddot;
+				}
+				else
+				{
+					ddot = enemyGameObject.AddComponent<DealDamageOverTime>() as DealDamageOverTime;
+			 		ddot.myTurretID = turretID;
+			 		return ddot;
+				}
+			}
+		}
+
+		DealSlow GetDS(GameObject enemyGameObject)
+		{
+			DealSlow ds = enemyGameObject.GetComponent<DealSlow>();
+			if(ds == null)
+			{
+			 	ds = enemyGameObject.AddComponent<DealSlow>() as DealSlow;
+			 	ds.myTurretID = turretID;
+			 	return ds;
+			}
+			else
+			{
+				if(ds.myTurretID == turretID)
+				{
+					//ddas.ApplyDOT(damage, turretLevel);
+					return ds;
+				}
+				else
+				{
+					ds = enemyGameObject.AddComponent<DealSlow>() as DealSlow;
+			 		ds.myTurretID = turretID;
+			 		return ds;
+				}
+			}
+		}
+
 		public void FindEnemiesInRangeOfFire()
 		{
-			List<Minion> enemiesInRange = new List<Minion>();
 			for(int i = 0; i < enemies.Length; i++)
 			{
 				float enemyDistance = Vector3.Distance (enemies[i].gameObject.transform.position, target.transform.position);
 				if(enemyDistance <= areaEffectRange)
 				{
-					enemies[i].Damage(damage, "FIRE", turretLevel);
+					DealDamageOverTime ddot = GetDDOT(enemies[i].gameObject);
+					ddot.myController = enemies[i];
+					StartCoroutine(ddot.ApplyDOT(damage, turretLevel));
 				}
 			}
 		}
 
 		public void FindEnemiesInRangeOfIce()
 		{
-			List<Minion> enemiesInRange = new List<Minion>();
 			for(int i = 0; i < enemies.Length; i++)
 			{
 				float enemyDistance = Vector3.Distance (enemies[i].gameObject.transform.position, target.transform.position);
 				if(enemyDistance <= areaEffectRange)
 				{
-					enemies[i].Damage(damage, "ICE", turretLevel);
+					DealDamageOverTime ddot = GetDDOT(enemies[i].gameObject);
+					ddot.myController = enemies[i];
+					StartCoroutine(ddot.ApplyDOT(damage, turretLevel));
+					DealSlow ds = GetDS(enemies[i].gameObject);
+					ds.myController = enemies[i];
+					StartCoroutine(ds.ApplySlow(damage, turretLevel));
+					//enemies[i].Damage(damage, "ICE", turretLevel);
 				}
 			}
 		}

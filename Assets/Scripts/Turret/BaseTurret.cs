@@ -50,6 +50,7 @@ namespace TDL {
 		//public List<Minion> enemiesFarthestAlong = new List<Minion>();
 		public AnimationClip halfSecond, threeQuarterSecond, oneSecond, oneAndQuarterSecond, oneAndHalfSecond, idle;
 		public AudioClip shootSound;
+		public int turretID = 0;
 
 		private AudioSource soundSource;
 		private int myLevel = 1;
@@ -62,12 +63,29 @@ namespace TDL {
 		// Use this for initialization
 		void Start () 
 		{
+			//TODO: create TurretID Zack 8-12-15
+			turretID = GenerateUniqueID();
 			soundSource = GetComponent<AudioSource> ();
 			if(simulatedUpgradeLevel != 1)
 			{
 				UpgradeTurretLevel(simulatedUpgradeLevel);
 				UpgradeTurretType(simulatedTurretType);
 			}
+		}
+
+		int GenerateUniqueID()
+		{
+			BaseTurret[] myTurrets = FindObjectsOfType<BaseTurret>();
+			int id = Random.Range(0, 1000);
+			for(int i = 0; i < myTurrets.Length; i++)
+			{
+				if(myTurrets[i].turretID == id)
+				{
+					return GenerateUniqueID();
+				}
+			}
+
+			return id;
 		}
 
 		public void UpgradeTurretLevel(int targetLevel)
@@ -476,6 +494,7 @@ namespace TDL {
 				bulletScript.turretLevel = myLevel;
 				bulletScript.killTimer = fireTimer;
 				bulletScript.damage = damage;
+				bulletScript.turretID = turretID;
 				bulletScript.speed = 60f;
 
 				switch(turretType)
