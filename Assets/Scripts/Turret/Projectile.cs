@@ -55,51 +55,51 @@ namespace TDL {
 
 		DealDamageOverTime GetDDOT(GameObject enemyGameObject)
 		{
-			DealDamageOverTime ddot = enemyGameObject.GetComponent<DealDamageOverTime>();
+			DealDamageOverTime[] ddot = enemyGameObject.GetComponents<DealDamageOverTime>();
 			if(ddot == null)
 			{
-			 	ddot = enemyGameObject.AddComponent<DealDamageOverTime>() as DealDamageOverTime;
-			 	ddot.myTurretID = turretID;
-			 	return ddot;
+			 	DealDamageOverTime newDDOT = enemyGameObject.AddComponent<DealDamageOverTime>() as DealDamageOverTime;
+			 	newDDOT.myTurretID = turretID;
+			 	return newDDOT;
 			}
 			else
 			{
-				if(ddot.myTurretID == turretID)
+				foreach(DealDamageOverTime damager in ddot)
 				{
-					//ddot.ApplyDOT(damage, turretLevel);
-					return ddot;
+					if(damager.myTurretID == turretID)
+					{
+						return damager;
+					}
 				}
-				else
-				{
-					ddot = enemyGameObject.AddComponent<DealDamageOverTime>() as DealDamageOverTime;
-			 		ddot.myTurretID = turretID;
-			 		return ddot;
-				}
+
+				DealDamageOverTime newDDOT = enemyGameObject.AddComponent<DealDamageOverTime>() as DealDamageOverTime;
+			 	newDDOT.myTurretID = turretID;
+			 	return newDDOT;
 			}
 		}
 
 		DealSlow GetDS(GameObject enemyGameObject)
 		{
-			DealSlow ds = enemyGameObject.GetComponent<DealSlow>();
+			DealSlow[] ds = enemyGameObject.GetComponents<DealSlow>();
 			if(ds == null)
 			{
-			 	ds = enemyGameObject.AddComponent<DealSlow>() as DealSlow;
-			 	ds.myTurretID = turretID;
-			 	return ds;
+			 	DealSlow newDS = enemyGameObject.AddComponent<DealSlow>() as DealSlow;
+			 	newDS.myTurretID = turretID;
+			 	return newDS;
 			}
 			else
 			{
-				if(ds.myTurretID == turretID)
+				foreach(DealSlow slower in ds)
 				{
-					//ddas.ApplyDOT(damage, turretLevel);
-					return ds;
+					if(slower.myTurretID == turretID)
+					{
+						return slower;
+					}
 				}
-				else
-				{
-					ds = enemyGameObject.AddComponent<DealSlow>() as DealSlow;
-			 		ds.myTurretID = turretID;
-			 		return ds;
-				}
+				
+				DealSlow newDS = enemyGameObject.AddComponent<DealSlow>() as DealSlow;
+			 	newDS.myTurretID = turretID;
+			 	return newDS;
 			}
 		}
 
